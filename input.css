@@ -1,5 +1,7 @@
 @tailwind base;
 @tailwind components;
 @import url('https://use.typekit.net/gyo2qhy.css');
+@import url('https://use.typekit.net/yjk6egn.css');
+@import url('./fonts.css');
 @tailwind utilities;
 
