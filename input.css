@@ -1,4 +1,6 @@
 @tailwind base;
 @tailwind components;
+@import url('./font.css');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 @tailwind utilities;
-@import url('https://use.typekit.net/gyo2qhy.css');
+

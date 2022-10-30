@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        'name-font': 'lambency',
+        'test-font': 'Great Vibes',
         'knot-font': 'open-sans-condensed'
       },
       backgroundImage: {
