@@ -3,36 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./dist/output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/yjk6egn.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/flowbite@1.4.4/dist/flowbite.js"></script>
+
+
 </head>
-<body>
+<script>
+  function myFunction() {
+    const x = document.getElementById("demo");
+    console.log(x.className);
+    if (x.className === "w-full block flex-grow lg:flex lg:items-center lg:w-auto") {
+      x.className = "w-full hidden flex-grow lg:flex lg:items-center lg:w-auto"
+    } else {
+      x.className = "w-full block flex-grow lg:flex lg:items-center lg:w-auto";
+    }
+  }
+</script>
 
-  <div class="flex flex-row items-center justify-center text-2xl w-1/3">
-    <div class="mt-9 mb-9 w-1/2 ml-20">
-      4:00 PM - 5:00 PM
-    </div>
-    <div class="mt-9 mb-9 w-1/2">
-      CEREMONY
-    </div>
-  </div>
-  <div class="flex flex-row items-center justify-center text-2xl w-1/3">
-    <div class="mt-9 mb-9 w-1/2 ml-20">
-      5:00 PM - 6:00 PM
-    </div>
-    <div class="mt-9 mb-9 w-1/2">
-      COCKTAIL HOUR
-    </div>
-  </div>  
-  <div class="flex flex-row items-center justify-center text-2xl w-1/3">
-    <div class="mt-9 mb-9 w-1/2 ml-20">
-      6:00 PM - 10:00 PM
-    </div>
-    <div class="mt-9 mb-9 w-1/2">
-      RECEPTION
-    </div>
-  </div>
-</div>
+<body class="">
 
+  <nav class="flex items-center justify-between flex-wrap p-6 text-2xl">
+    <div class="block lg:hidden">
+      <button onclick="myFunction()" class="flex items-center px-3 py-2 border border-black rounded">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div id="demo" class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="text-sm lg:flex-grow">
+        <a class="hover:underline mx-8 block mt-4 lg:mt-0 lg:inline-block" href="./index.html">Home</a>
+        <a class="hover:underline mx-8 block mt-4 lg:mt-0 lg:inline-block" href="./story.html">Our Story</a>
+        <a class="hover:underline mx-8 block mt-4 lg:mt-0 lg:inline-block" href="./qa.html">Q + A</a>
+        <a class="hover:underline mx-8 block mt-4 lg:mt-0 lg:inline-block" href="./travel.html">Travel</a>
+        <a class="hover:underline mx-8 block mt-4 lg:mt-0 lg:inline-block" href="./registry.html">Registry</a>
+        <a class="hover:underline mx-8 block mt-4 lg:mt-0 lg:inline-block" href="./rsvp.html">RVSP</a>
+      </div>
+    </div>
+  </nav>
 </body>
+
 </html>

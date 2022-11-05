@@ -8,8 +8,38 @@
   <link rel="stylesheet" href="https://use.typekit.net/yjk6egn.css">
 
 </head>
+<script>
+  function myFunction() {
+    const x = document.getElementById("demo");
+    console.log(x.className);
+    if (x.className === "w-full flex justify-center flex-grow lg:flex lg:items-center lg:w-auto") {
+      x.className = "w-full hidden flex-grow lg:flex lg:items-center lg:w-auto"
+    } else {
+      x.className = "w-full flex justify-center flex-grow lg:flex lg:items-center lg:w-auto";
+    }
+  }
+</script>
 <body class="font-knot-font text-knot-textcolor bg-texture">
-  <div class="flex flex-col justify-center items-center w-full">
+  <nav class="flex items-center justify-start flex-wrap p-6 fixed w-full text-2xl md:hidden shadow-lg bg-[#dba874]">
+    
+    <div class="flex justify-center md:hidden">
+      <button onclick="myFunction()" class="flex items-center px-3 py-2 border border-black rounded w-full">
+        <svg class="h-3 w-auto" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+
+    <div id="demo" class="w-full hidden flex-grow lg:flex lg:items-center lg:w-auto">
+      <div class="">
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./index.html">Home</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./story.html">Our Story</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./qa.html">Q + A</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./travel.html">Travel</a>
+        <a class="underline hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./registry.html">Registry</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./rsvp.html">RVSP</a>
+      </div>
+    </div>
+  </nav>
+  <div class="flex flex-col justify-end md:justify-center items-center w-full h-[350px]">
     <div class="">
       <img class = "w-[300px] md:w-[350px] lg:w-[400px] h-auto" src="https://media-api.xogrp.com/images/e34db631-d863-4862-b075-1aaf33d0772c~rt_auto-rs_2048.h?ordering=explicit>"/>
     </div>
@@ -19,87 +49,733 @@
       </h1>
     </div>
     <div>
-      <h1 class="md:text-2xl text-xl mb-12">
+      <h1 class="md:text-2xl text-xl md:mb-12">
         June 24, 2023 &#x2022; Estes Park, CO
       </h2>
     </div>
 
   </div>
 
-  <nav class="sm:flex text-2xl justify-center hidden" >
-    <div class="flex justify-center">
-        <a class="hover:underline mx-8" href="./index.html">Home</a>
-        <a class="hover:underline mx-8" href="./story.html">Our Story</a>
-        <a class="hover:underline mx-8" href="./qa.html">Q + A</a>
-        <a class="hover:underline mx-8" href="./travel.html">Travel</a>
-        <a class="hover:underline mx-8" href="./registry.html">Registry</a>
-        <a class="hover:underline mx-8" href="./rsvp.html">RVSP</a>
+  <nav class="flex items-center justify-center flex-wrap p-6 pb-0 text-2xl">
+    <div id="demo" class="w-full hidden md:justify-center md:flex md:items-center">
+      <div class="md:flex md:justify-center">
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./index.html">Home</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./story.html">Our Story</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./qa.html">Q + A</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./travel.html">Travel</a>
+        <a class="underline hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./registry.html">Registry</a>
+        <a class="hover:underline mx-8 block mt-4 md:mt-0 md:inline-block" href="./rsvp.html">RVSP</a>
+      </div>
     </div>
-</nav>
+  </nav>
 
 <script src="myscript.js"></script>
 
+<div class="flex justify-center md:mt-5 mx-5 text-xl">
+  Thank you so much in advance for looking over our wish list! Please use the following address for any gift that is not on the registry:
+</div>
+<div class="flex justify-center mb-5 mt-3 text-xl">
+  12 W Gay St, APT 312<br/>
+  Columbus, OH, 43215
+</div>
+
 <div class="md:w-5/6 bg-white mx-auto flex flex-wrap justify-around w-full max-w-[1400px]">
   <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
-    <img class="w-fit" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-sans text-sm md:text-md mb-2 truncate">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
-      <div class="font-bold text-lg">$199.99</div>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
-    </div>
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/StripedBambooChopsticksSHF15/?$web_pdp_main_carousel_med$&220913132610&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Striped Bamboo Chopstick, Set of 5 Pairs</div>
+        <div class="font-bold text-lg">$5.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
   </div>
   <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
-    <img class="w-full" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-sans text-sm md:text-md mb-2 truncate">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
-      <div class="font-bold text-lg">$199.99</div>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
-    </div>
-  </div>
-  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md  mb-3">
-    <img class="w-fit" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-sans text-sm md:text-md truncate">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
-      <div class="font-bold text-lg">$199.99</div>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
-    </div>
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/CaesnaPastryServerS13/?$web_pdp_main_carousel_med$&220913131419&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Caesna Mirror Pastry Server</div>
+        <div class="font-bold text-lg">$19.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2 flex">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
   </div>
   <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
-    <img class="w-fit" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-sans text-sm md:text-md mb-2 truncate">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
-      <div class="font-bold text-lg">$199.99</div>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
-    </div>
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/FrenchWhisk8inSHF18/?$web_pdp_main_carousel_med$&220913135402&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">8" French Whisk</div>
+        <div class="font-bold text-lg">$8.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
   </div>
   <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
-    <img class="w-fit" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-sans text-sm md:text-md mb-2 truncate">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
-      <div class="font-bold text-lg">$199.99</div>
-    </div>
-    <div class="px-6 pt-4 pb-2">
-      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
-    </div>
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/OXOSlcnBastingBrushSSS22_VND/?$web_pdp_main_carousel_med$&220415160416&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">OXO ® Silicone Basting Brush</div>
+        <div class="font-bold text-lg">$11.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
   </div>
   <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
-    <img class="w-fit" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg" alt="Sunset in the mountains">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/OlivewoodCrmcSaltCellarSSF22/?$web_pdp_main_carousel_med$&220401175622&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Olivewood and Ceramic Salt Cellar</div>
+        <div class="font-bold text-lg">$16.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/MeshStrainersS3SHS19/?$web_pdp_main_carousel_med$&190411135242&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Stainless Steel Strainer-Sifter, Set of 3</div>
+        <div class="font-bold text-lg">$24.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/TeakhausEgGrPrfCtBdHG24x18SSF21/?$web_pdp_main_carousel_med$&210729172731&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Teakhaus Edge-Grain Professional Cutting Board with Hand Grips 24"x18"</div>
+        <div class="font-bold text-lg">$134.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3 flex">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/SwoopBowlMediumSSS20/?$web_pdp_main_carousel_med$&200226123420&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Swoop Medium Bowl</div><br/>
+        <div class="font-bold text-lg">$9.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/CarsonAshWoodServingBowlSSF21/?$web_pdp_main_carousel_med$&210825091608&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Carson Ash Wood Serving Bowl</div>
+        <div class="font-bold text-lg">$59.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/MeraCoupe10ozSSF21/?$web_pdp_main_carousel_med$&210707130452&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Mera 10-Oz. Coupe Glass</div>
+        <div class="font-bold text-lg">$12.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/TourRedWine18ozSSS22/?$web_pdp_main_carousel_med$&220107120254&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Tour 18-Oz. Red Wine Glass</div><br/>
+        <div class="font-bold text-lg">$14.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/KitchenAid3p5cFdChpCntrSlvSHS19/?$web_pdp_main_carousel_med$&210411103347&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">KitchenAid ® Contour Silver 3.5-Cup Mini Food Processor</div>
+        <div class="font-bold text-lg">$39.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/Chemex8CupCffeMkrWWdCollrSHF16/?$web_pdp_main_carousel_med$&220913133654&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Chemex ® 8-Cup Glass Pour-Over Coffee Maker with Natural Wood Collar</div>
+        <div class="font-bold text-lg">$46.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/OrgCottonBBStdCasePrSSF22/?$web_pdp_main_carousel_med$&220719171709&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Organic Cotton Brulee Brown Standard Pillowcases, Set of 2</div>
+        <div class="font-bold text-lg">$39.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/OrgCottonBBQnShtSSF22/?$web_pdp_main_carousel_med$&221025140653&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Organic Cotton Brulee Brown Queen Sheet Set</div>
+        <div class="font-bold text-lg">$139.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/OrganicAntiMicTowelsWIvrS6SSF22/?$web_pdp_main_carousel_med$&220802125803&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Antimicrobial Organic Cotton Ivory Bath Towels, Set of 6</div>
+        <div class="font-bold text-lg">$167.70</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/HypoallergenicMedFQDvtInstSHS18/?$web_pdp_main_carousel_med$&220913135056&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Hypoallergenic Medium Full/Queen Duvet Insert</div>
+        <div class="font-bold text-lg">$209.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/HempWhiteFQDvtFSSF21/?$web_pdp_main_carousel_med$&210518100045&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">White Natural Hemp Full/Queen Duvet Cover</div>
+        <div class="font-bold text-lg">$279.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/CB3pcCookieSetSlvrSSF22/?$web_pdp_main_carousel_med$&220519102751&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Crate & Barrel Silver 3-Piece Non-Stick Cookie Sheet and Cooling Rack Set</div>
+        <div class="font-bold text-lg">$49.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/LeCreuHSqBkDshS2ArtSSF21_VND/?$web_pdp_main_carousel_med$&210510163435&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Le Creuset ® Heritage 2-Piece Square Artichaut Green Ceramic Baking Dish Set</div>
+        <div class="font-bold text-lg">$55.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/MarinBlueLrgServingBowlSSS21/?$web_pdp_main_carousel_med$&210203141303&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Marin Blue Large Serving Bowl</div><br/>
+        <div class="font-bold text-lg">$49.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/LeCreuSg5p5qFchOvnDpTealSSF20/?$web_pdp_main_carousel_med$&200914180250&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Le Creuset ® Signature 5.5-Qt. Deep Teal Enameled Cast Iron Dutch Oven</div>
+        <div class="font-bold text-lg">$419.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+<div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.crateandbarrel.com/gift-registry/guest/r6594643">
+      <img class="w-full" src="https://cb.scene7.com/is/image/Crate/WusthofClsIk6BlkAcaSSF21_VND/?$web_pdp_main_carousel_med$&210816182813&wid=625&hei=625">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Wüsthof ® Classic Ikon 6-Piece Acacia Knife Block Set</div>
+        <div class="font-bold text-lg">$475.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <img class="w-fit" src="https://m.media-amazon.com/images/I/51SmSK5NmhS._SR500,500_US0_.jpg">
     <div class="px-6 py-4">
-      <div class="font-sans text-sm md:text-md mb-2 truncate">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
+      <div class="font-sans text-sm md:text-md mb-2">VIZIO V-Series 5.1 Home Theater Sound Bar with Dolby Audio...</div>
       <div class="font-bold text-lg">$199.99</div>
     </div>
     <div class="px-6 pt-4 pb-2">
       <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
     </div>
-  </div> 
+  </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/41b6zXBsW9L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Pyrex Deep 6-Piece Glass Baking Dish Set with Lids...</div><br/>
+        <div class="font-bold text-lg">$42.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/71nIe-LgtWL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">TinyTimes 65''x22'' Arched Full Length Mirror, Floor Mirror with Stand...</div>
+        <div class="font-bold text-lg">$169.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/91SaslCeN-L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Honey-Can-Do Folding Tabletop Ironing Board with Iron Rest...</div>
+        <div class="font-bold text-lg">$19.44</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/61ZLkwNlRiL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Black+Decker ICR2020, Green</div><br/>
+        <div class="font-bold text-lg">$27.93</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/81J2iuSPFrL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Mkono Woven Storage Basket Decorative Natural Rope Basket Wooden Bead Decoration for Blankets...</div>
+        <div class="font-bold text-lg">$25.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/911Wxq07nUL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Honey Can Do Oversize Collapsible Clothes Drying Rack...</div><br/>
+        <div class="font-bold text-lg">$32.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/81HB2J86XhL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">PriorityChef Colander, Stainless Steel Kitchen Strainer For Washing...</div>
+        <div class="font-bold text-lg">$14.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/718wkX3PT5L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Calphalon Classic Stainless Steel Cookware, Sauce Pan...</div>
+        <div class="font-bold text-lg">$42.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/81jt3T3HL8L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Premium Kitchen Towels (20”x 28”, 6 Pack) | Large...</div>
+        <div class="font-bold text-lg">$21.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/51ra67TcfYS._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Muso Wood Wooden French Rolling Pin for Baking, Beech Wood...</div>
+        <div class="font-bold text-lg">$10.98</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/61PhyrfBgUS._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">MARCATO Atlas 150 Pasta Machine, Made in Italy, Includes...</div>
+        <div class="font-bold text-lg">$83.40</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/51wh7Gn22lL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">OXO Good Grips Glass Candy and Deep Fry Thermometer, Silver...</div>
+        <div class="font-bold text-lg">$20.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/51eRmQsAVaL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Cuisinart AMB-9SP 9-Inch Chef's Classic Nonstick Bakeware...</div><br/>
+        <div class="font-bold text-lg">$10.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/bowl-lift-stand-mixers/p.professional-5-plus-series-5-quart-bowl-lift-stand-mixer.kv25g0xob.html?">
+      <img class="w-full" src="https://kitchenaid-h.assetsadobe.com/is/image/content/dam/global/kitchenaid/countertop-appliance/portable/images/hero-KV25G0XOB.tif?id=KBalf2&fmt=jpg&dpr=off&fit=constrain,1&wid=400&hei=472">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Professional 5™ Plus Series 5 Quart Bowl-Lift</div>
+        <div class="font-bold text-lg">$249.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/61VSHoAc5oL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Cuisinart CGS-W13 Wooden Handle Tool Set (13-Piece)...</div>
+        <div class="font-bold text-lg">$21.87</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/41ZZ2L2YYxL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">KitchenAid - KO113OHOBA KitchenAid Gourmet Pizza Wheel, One Size...</div>
+        <div class="font-bold text-lg">$12.87</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/61RlaoX8CtL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">One Fur All, Pet House Candle - 100% Soy Wax Candle - Pet...</div>
+        <div class="font-bold text-lg">$22.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/51wh7Gn22lL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Epicurean Kitchen Series Cutting Board, 11.5-Inch × 9-Inch...</div>
+        <div class="font-bold text-lg">$24.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/61wXF1fV0RL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Spice Rack Kitchen Cabinet Organizer- 3 Tier Bamboo Expandable Display Shelf...</div>
+        <div class="font-bold text-lg">$29.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/81UYVSXrguL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Premium Bamboo Silverware Organizer - Expandable Kitchen Drawer Organizer...</div>
+        <div class="font-bold text-lg">$29.95</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/61egZZgcE3L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">STORi Audrey Stackable Clear Plastic Organizer Drawers | 2 Piece Set...</div><br/>
+        <div class="font-bold text-lg">$22.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/81i+BRdPJqL._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Ayesha Curry Kitchen Gadgets Parawood Cooking Set with Pan Paddle...</div>
+        <div class="font-bold text-lg">$24.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/81MjiS6QW0L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Under Sink Organizer - 2 Tier Bathroom Countertop Organizer...</div>
+        <div class="font-bold text-lg">$34.90</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.amazon.com/wedding/organize-registry?ref_=wedding_subnav">
+      <img class="w-full" src="https://m.media-amazon.com/images/I/813ntIKWi-L._SR500,500_.jpg">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">The Original Vacu Vin Wine Saver Pump and Wine Preserver with Vacu....</div>
+        <div class="font-bold text-lg">$11.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_610769ed-5116-460d-bba1-37f00210d4fc">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Stainless Steel Measuring Cups - Made By Design™</div>
+        <div class="font-bold text-lg">$8.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_596de099-a451-4b54-b362-ba4e8eee90d5">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Houdini Clear Sphere Tray</div>
+        <div class="font-bold text-lg">$20.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span><br/>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_765dfbe6-1d0f-48d8-8be0-29ba082178fd">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Houdini 5pc Bar Tool Set</div>
+        <div class="font-bold text-lg">$39.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_470610cd-c202-40b9-928f-1e1a51fe88ae">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Wood Tray White - Casaluna™</div>
+        <div class="font-bold text-lg">$20.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_e732eb1d-a76b-4e22-933b-716a0a479ba7">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">2pk Geneva Crystal Double Old Fashion Etched 10.7...</div>
+        <div class="font-bold text-lg">$30.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_c6c73c12-c08c-44c7-9e96-7d75b7bf263a">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">50"x70" Oversized Solid Bed Throw Warm Brown...</div>
+        <div class="font-bold text-lg">$79.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_2d1c8db6-8adc-44f7-97db-fcbeffa31253">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">KitchenAid Food Grinder Attachment</div>
+        <div class="font-bold text-lg">$59.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_6c2ca0ff-8dd1-413d-97ac-27dc2db6ca7b">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">Cole & Mason Mortar and Pestle Gray</div>
+        <div class="font-bold text-lg">$24.99</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_0b474e86-5890-4cfe-828a-21ea15bf44cc">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">3pc Sussex Serve Set Silver - Threshold™y</div>
+        <div class="font-bold text-lg">$10.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 1 of 1</span>
+      </div>
+    </a>
+  </div>
+  <div class="w-5/12 md:w-1/2 lg:w-full max-w-xs bg-white rounded-lg shadow-md mb-3">
+    <a href="https://www.target.com/gift-registry/my-registry?registryId=56f1fda0-2d1b-11ed-abe5-cdd80fc311f2&type=WEDDING&regMode=REGST">
+      <img class="w-full" src="https://target.scene7.com/is/image/Target/GUEST_1564dc0d-0dc6-451f-9b49-6393ef4ec579">
+      <div class="px-6 py-4">
+        <div class="font-sans flex flex-wrap text-sm md:text-md mb-2">12pc Stoneware Westfield Dinnerware Set Gray...</div>
+        <div class="font-bold text-lg">$25.00</div>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Needs 2 of 2</span>
+      </div>
+    </a>
+  </div>
 </div>
 
 
