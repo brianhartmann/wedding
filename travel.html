@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/gyo2qhy.css">
   <link rel="stylesheet" href="https://use.typekit.net/yjk6egn.css">
@@ -20,7 +22,7 @@
   }
 </script>
 <body class="font-knot-font text-knot-textcolor bg-texture">
-  <nav class="flex items-center justify-start flex-wrap p-6 fixed w-full text-2xl md:hidden shadow-lg bg-[#dba874]">
+  <nav class="flex items-center justify-start flex-wrap p-4 fixed w-full text-2xl md:hidden shadow-lg bg-[#dba874]">
     
     <div class="flex justify-center md:hidden">
       <button onclick="myFunction()" class="flex items-center px-3 py-2 border border-black rounded w-full">
@@ -69,8 +71,349 @@
     </div>
   </nav>
 
-<div class="flex justify-center text-xl md:mt-8">Travel info coming soon!</div>
+<div class="flex justify-center text-xl md:mt-8 leading-8 md:leading-9 lg:leading-10 md:w-3/4 lg:w-3/5 xl:w-1/2 w-11/12 mx-auto mb-16 indent-4">Estes Park sits at the entrance of Rocky Mountain National Park. From Denver International Airport, the drive to Estes Park is under two hours, which makes it a popular travel destination. This town is the epitome of Colorado charm, and its quaintness adds to its greatness. Because it’s more rustic than a big city, there aren’t many large hotels that could hold a big room block. Below, you’ll find a variety of lodging options to explore – all within a 10-minute drive to our venue.</div>
 
+<a href="https://www.stanleyhotel.com/" class="hover:text-[#3c3e40] hover:underline">
+  <div class="flex justify-center text-3xl lg:text-4xl mt-5 mb-1 font-bold">
+    The Stanley Hotel
+  </div>
+</a>
+
+<div class="flex justify-center">
+  <div id="stanley" class="carousel slide relative md:w-3/4 lg:w-3/5 xl:w-1/2 hidden md:block" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="https://www.stanleyhotel.com/uploads/9/8/6/9/98696462/stanley-style-043_5_orig.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://www.stanleyhotel.com/uploads/9/8/6/9/98696462/manor-hall_orig.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://www.stanleyhotel.com/uploads/9/8/6/9/98696462/lodge-queen_4_orig.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#stanley"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#stanley"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  <img src="https://www.stanleyhotel.com/uploads/9/8/6/9/98696462/stanley-style-043_5_orig.jpg" class="xs:11/12 sm:w-3/4 block md:hidden rounded-lg"/>
+
+</div>
+
+
+<div class="leading-8 md:leading-9 lg:leading-10 text-xl mt-4 md:mt-6 xl:mt-8 md:w-3/4 lg:w-3/5 xl:w-1/2 w-11/12 mx-auto mb-16 indent-4">
+  This historic hotel is the perfect combination of rustic and luxury. During Stephen King’s stay at the Stanley Hotel, he developed the idea for his famous novel, The Shining. This hotel has quality dining options and iconic views — and even a “ghost tour” of the property if you have extra time to explore. The Lodge at the Stanley is where we suggest you look first.
+</div>
+
+<a href="https://www.luxuryestesparkcabins.com/" class="hover:text-[#3c3e40] hover:underline">
+  <div class="flex justify-center text-3xl lg:text-4xl mt-5 mb-1 font-bold">
+    Rams Horn Village Resort
+  </div>
+</a>
+
+
+<div class="flex justify-center">
+  <div id="ramsHorn" class="carousel slide relative xs:11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 hidden md:block" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="https://www.luxuryestesparkcabins.com/wp-content/uploads/2018/12/2-Summer-Exterior.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/estespark/RH-Longs-from-HIgh-Drive_8cd127e5-5056-a36f-230912c9dd00ffde.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://www.luxuryestesparkcabins.com/wp-content/uploads/2018/12/3-MBR.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#ramsHorn"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#ramsHorn"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  <img src="https://www.luxuryestesparkcabins.com/wp-content/uploads/2018/12/2-Summer-Exterior.jpg" class="xs:11/12 sm:w-3/4 block md:hidden rounded-lg"/>
+
+</div>
+
+
+<div class="leading-8 md:leading-9 lg:leading-10 text-xl mt-4 md:mt-6 xl:mt-8 md:w-3/4 lg:w-3/5 xl:w-1/2 w-11/12 mx-auto mb-16 indent-4">
+  Described as a “home away from home,” this resort offers cabins that sleep up to six people — equipped with full kitchens. From volleyball courts to gas (and charcoal) grills to bicycles, Rams Horn has an extensive list of amenities. Plus, it’s just up the road from our wedding venue. However, a three-night minimum is required to stay at this resort.
+</div>
+
+<a href="https://appenzellinn.com/" class="hover:text-[#3c3e40] hover:underline">
+  <div class="flex justify-center text-3xl lg:text-4xl mt-5 mb-1 font-bold">
+    Appenzell Inn
+  </div>
+</a>
+
+<div class="flex justify-center">
+  <div id="appenzell" class="carousel slide relative xs:11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 hidden md:block" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/305965563_507730071352407_7585764339350976335_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=1xwGiw_r6YEAX92-Oox&_nc_ht=scontent-ord5-2.xx&oh=00_AfDZ90XN8GBCmML3C7jliblK38_6HeGhNkxyT3mAHGWWvw&oe=636CA92B"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://appenzellinn.com/wp-content/uploads/2021/09/IMG_0795-1024x768.jpeg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://iqwebbook.blob.core.windows.net/roompictures/AIECO220/3d8ef5f94b984602a0c7aade3bf3e735.jpg?2018101819192219"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#appenzell"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#appenzell"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/305965563_507730071352407_7585764339350976335_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=1xwGiw_r6YEAX92-Oox&_nc_ht=scontent-ord5-2.xx&oh=00_AfDZ90XN8GBCmML3C7jliblK38_6HeGhNkxyT3mAHGWWvw&oe=636CA92B" class="xs:11/12 sm:w-3/4 block md:hidden rounded-lg"/>
+
+</div>
+
+
+<div class="leading-8 md:leading-9 lg:leading-10 text-xl mt-4 md:mt-6 xl:mt-8 md:w-3/4 lg:w-3/5 xl:w-1/2 w-11/12 mx-auto mb-16 indent-4">
+  The Appenzell Inn takes an Alpine twist on the classic motel. Located in downtown Estes Park, guests are within walking distance of cute shops and restaurants. This inn has budget-friendly rooms for both couples and families. It’s also the place where an eight-year-old Nicole and her family stayed on their first visit to Estes!
+</div>
+
+<a href="https://www.bluedoorinnestes.com/" class="hover:text-[#3c3e40] hover:underline">
+  <div class="flex justify-center text-3xl lg:text-4xl mt-5 mb-1 font-bold">
+    Blue Door Inn
+  </div>
+</a>
+
+<div class="flex justify-center">
+  <div id="bdinn" class="carousel slide relative xs:11/12 md:w-3/4 lg:w-3/5 xl:w-1/2 hidden md:block" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="https://www.planetware.com/wpimages/2021/03/colorado-estes-park-best-resorts-lodges-blue-door-inn.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://pix8.agoda.net/hotelImages/340034/-1/2417da5b1265f300fd495a27a7074144.jpg"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="https://mmimageservice.azurewebsites.net/api/image/property/764f2aa2-8f94-4e9c-a9b8-548b641ae70a/L"
+          class="block w-full rounded-lg"
+          alt="..."
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#bdinn"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#bdinn"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+  <img src="https://www.planetware.com/wpimages/2021/03/colorado-estes-park-best-resorts-lodges-blue-door-inn.jpg" class="xs:11/12 sm:w-3/4 block md:hidden rounded-lg"/>
+
+</div>
+
+
+<div class="leading-8 md:leading-9 lg:leading-10 text-xl mt-4 md:mt-6 xl:mt-8 md:w-3/4 lg:w-3/5 xl:w-1/2 w-11/12 mx-auto mb-16 indent-4">
+  As an affordable option in Estes Park, the Blue Door Inn is comfortable, clean, and cozy. It has hundreds of happy reviews praising its extensive amenities and kind-hearted staff. This hotel offers a complimentary breakfast for guests who need a quick bite before hitting the town (or the trails).
+</div>
+
+<div class="flex justify-center text-3xl lg:text-4xl mt-5 mb-1 font-bold">
+  Additional Lodging
+</div>
+
+<ul class="flex justify-center text-2xl mt-5 mb-1 flex-col items-center">
+  <a href="https://ridgelinehotel.com/" class=""><li class="mx-4 hover:text-[#3c3e40] hover:underline">The Ridgeline Hotel</li></a>
+  <a href="https://www.estesdiscoverylodge.com/" class="hover:underline hover:text-[#3c3e40]"><li class="mx-4">Discovery Lodge</li></a>
+  <a href="https://www.diamondresortsandhotels.com/resorts/the-historic-crags-lodge" class="hover:underline hover:text-[#3c3e40]"><li class="mx-4">Historic Crags Lodge</li></a>
+  <a href="https://www.innonfallriver.com/" class="hover:underline hover:text-[#3c3e40]"><li class="mx-4">The Inn on Fall River</li></a>
+  <li class="mx-4">Airbnbs/Vrbos</li>
+
+</ul>
 
 <div class="flex  flex-col items-center divide-y justify-end divide-knot-textcolor mt-14 mb-14 text-[#4f4443]">
   <div class="text-3xl font-ffont md:text-4xl lg:text-5xl pb-3">
