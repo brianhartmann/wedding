@@ -3273,6 +3273,10 @@ video {
     width: 66.666667%;
   }
 
+  .lg\:w-2 {
+    width: 0.5rem;
+  }
+
   .lg\:flex-grow {
     flex-grow: 1;
   }
