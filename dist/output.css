@@ -1013,6 +1013,18 @@ video {
   height: 10.625rem;
 }
 
+.max-h-5 {
+  max-height: 1.25rem;
+}
+
+.max-h-60 {
+  max-height: 15rem;
+}
+
+.max-h-64 {
+  max-height: 16rem;
+}
+
 .w-full {
   width: 100%;
 }
