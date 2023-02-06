@@ -747,6 +747,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -765,21 +770,6 @@ video {
 .mx-96 {
   margin-left: 24rem;
   margin-right: 24rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 
 .mt-4 {
@@ -830,12 +820,20 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-3 {
@@ -862,28 +860,12 @@ video {
   margin-bottom: 0.25rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mr-4 {
   margin-right: 1rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .box-border {
@@ -994,10 +976,6 @@ video {
   height: auto;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -1054,6 +1032,10 @@ video {
   width: 50%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-5\/12 {
   width: 41.666667%;
 }
@@ -1064,20 +1046,16 @@ video {
   width: fit-content;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
-}
-
 .w-6 {
   width: 1.5rem;
 }
 
-.max-w-xs {
-  max-width: 20rem;
+.max-w-\[500px\] {
+  max-width: 500px;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-xs {
+  max-width: 20rem;
 }
 
 .max-w-\[1400px\] {
@@ -3039,12 +3017,12 @@ video {
     width: 350px;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-5\/6 {
@@ -3106,12 +3084,12 @@ video {
     width: 400px;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:w-3\/5 {
@@ -3142,14 +3120,14 @@ video {
     line-height: 1.75rem;
   }
 
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:leading-10 {
