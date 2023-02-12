@@ -824,10 +824,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -1048,10 +1044,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.max-w-\[500px\] {
-  max-width: 500px;
 }
 
 .max-w-xs {
